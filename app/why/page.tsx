@@ -19,7 +19,8 @@ const itemVariants: Variants = {
 
 export default function WhyPage() {
   return (
-    <main className="h-screen w-full flex flex-col lg:flex-row bg-[#050505] text-white overflow-hidden relative selection:bg-orange-500/30 selection:text-orange-200">
+    // เพิ่ม min-h-screen เพื่อป้องกันปัญหาบนบาง device ที่ content อาจล้น
+    <main className="min-h-screen h-screen w-full flex flex-col lg:flex-row bg-[#050505] text-white overflow-hidden relative selection:bg-orange-500/30 selection:text-orange-200">
       
       {/* --- Background Effects (Ambience) --- */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-600/5 blur-[150px] rounded-full pointer-events-none" />
@@ -27,32 +28,41 @@ export default function WhyPage() {
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 mix-blend-overlay pointer-events-none"></div>
 
       {/* ---------------- Left Section: Image (New Frame Design) ---------------- */}
-      <div className="hidden lg:flex lg:w-1/2 h-full items-center justify-center p-12 relative z-10">
-         
+      {/* ปรับ padding ให้เหมาะสมกับ tablet (p-8) และ desktop (lg:p-12) */}
+      <div className="hidden lg:flex lg:w-1/2 h-full items-center justify-center p-8 lg:p-12 relative z-10">
+          
          {/* Decorative Grid Behind */}
          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
 
          {/* The Frame Container */}
          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="relative w-full max-w-md h-[80vh] group"
+           initial={{ opacity: 0, scale: 0.9 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 1, ease: "easeOut" }}
+           // --- จุดแก้ไขหลัก ---
+           // 1. ลบ h-[80vh] ออก เพื่อไม่ให้ความสูงยึดติดกับหน้าจอมากเกินไป
+           // 2. เพิ่ม aspect-[3/4] เพื่อบังคับสัดส่วนเป็นแนวตั้งที่สวยงาม (หรือใช้ aspect-[4/5] ถ้าอยากได้ป้อมกว่านี้)
+           // 3. ปรับ max-w ให้ยืดหยุ่นขึ้น (max-w-sm บน tablet, max-w-md บนจอใหญ่)
+           // 4. เพิ่ม h-auto เพื่อให้ความสูงปรับตาม aspect ratio
+           // 5. เพิ่ม mx-auto lg:mx-0 เพื่อจัดกึ่งกลางถ้าจำเป็น
+           className="relative w-full max-w-sm xl:max-w-md aspect-[3/4] h-auto group mx-auto lg:mx-0"
          >
             {/* 1. The Border/Glow Effect */}
             <div className="absolute -inset-1 bg-gradient-to-b from-orange-500/20 to-purple-500/20 rounded-[32px] blur-sm opacity-50 group-hover:opacity-100 transition duration-700"></div>
             
             {/* 2. Main Image Card */}
-            <div className="relative h-full w-full rounded-[30px] overflow-hidden border border-white/10 bg-[#111] shadow-2xl">
+            {/* ลบ h-full ออก และใช้ absolute inset-0 เพื่อให้เต็มพื้นที่ container ที่มี aspect-ratio แล้ว */}
+            <div className="absolute inset-0 w-full h-full rounded-[30px] overflow-hidden border border-white/10 bg-[#111] shadow-2xl">
                 <Image 
-                  src="https://www.kmutt.ac.th/wp-content/uploads/2020/09/KMUTT_CI_Semi_Logo-normal-full-1061x1200.png" 
-                  alt="KMUTT Atmosphere"
+                  src="https://i.ibb.co/v4BNJNZw/1.png" 
+                  alt="kmitl"
                   fill
-                  className="object-cover transition-transform duration-[5s] group-hover:scale-110 opacity-90"
+                  // เพิ่ม object-center เพื่อให้แน่ใจว่าโฟกัสกลางภาพเสมอ
+                  className="object-cover object-center transition-transform duration-[5s] group-hover:scale-110 opacity-90"
                   priority
                 />
                 
-                {/* Overlay Gradient (เหลือแค่เงาดำจางๆ) */}
+                {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
 
                 {/* Floating Badge (Top Left) */}
@@ -60,8 +70,6 @@ export default function WhyPage() {
                     <Sparkles className="w-3 h-3 text-orange-400" />
                     <span className="text-[10px] font-bold tracking-widest text-white uppercase">My Vision</span>
                 </div>
-
-                {/* --- ลบส่วน EST. 1960 ออกไปแล้วครับ --- */}
             </div>
          </motion.div>
       </div>
@@ -73,7 +81,8 @@ export default function WhyPage() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-col h-full justify-center max-h-[850px]" 
+          // เพิ่ม overflow-y-auto และปรับ max-h เพื่อป้องกัน content ล้นจอในแนวตั้งบน Tablet บางรุ่น
+          className="flex flex-col h-full justify-center max-h-screen lg:max-h-[850px] overflow-y-auto lg:overflow-visible no-scrollbar py-8 lg:py-0" 
         >
           {/* 1. Header Section */}
           <motion.div variants={itemVariants} className="mb-6 shrink-0">
@@ -82,7 +91,7 @@ export default function WhyPage() {
               Vision & Passion
             </div>
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-white mb-2">
-              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">KMUTT?</span>
+              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">KMITL?</span>
             </h1>
             <p className="text-stone-400 text-sm font-light max-w-md">
               ทำไมต้องเป็นที่นี่? <span className="text-stone-600 mx-2">|</span> คำตอบจากใจและความตั้งใจจริง
@@ -107,13 +116,13 @@ export default function WhyPage() {
             <ReasonCard 
               icon={<Lightbulb className="w-4 h-4 text-orange-400" />}
               title="Innovation & Future (Ant Spirit)"
-              desc="ผมชอบ 'ความสู้งาน' ของบางมดครับ ผมรู้กิตติศัพท์ว่า ที่นี่เรียนโหดและเน้นผลงานจริง ซึ่งมัน 'ตรงจริต' ผมมาก ผมไม่ได้มองหาที่เรียนสบายๆ แต่อยากเอาตัวเองมาอยู่ในที่ที่คนเก่งๆ เขาขยันกัน เพื่อให้ผมพัฒนาตัวเองยิ่งขึ้นไปอีก"
+              desc="ผมชอบ 'ความสู้งาน' ของลาดกระบังครับ ผมรู้กิตติศัพท์ว่า ที่นี่ดีเด่นดังมานานและมีผลงานจริง ซึ่งมัน 'ตรงจริต' ผมมาก ผมไม่ได้มองหาที่เรียนสบายๆ แต่อยากเอาตัวเองมาอยู่ในที่ที่คนเก่งๆ เขาขยันกัน เพื่อให้ผมพัฒนาตัวเองยิ่งขึ้นไปอีก"
             />
 
           </div>
 
           {/* 3. Button Section */}
-          <motion.div variants={itemVariants} className="shrink-0 pt-2">
+          <motion.div variants={itemVariants} className="shrink-0 pt-2 pb-4 lg:pb-0">
             <Link href="/portfolio">
               <button className="group relative inline-flex items-center gap-3 px-8 py-3 bg-white text-black rounded-full font-bold text-xs tracking-widest hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-orange-500/40">
                 ดูผลงาน
@@ -147,7 +156,7 @@ function ReasonCard({ icon, title, desc }: { icon: React.ReactNode, title: strin
             {title}
           </h3>
           <div className="relative">
-             {/* Quote icon */}
+              {/* Quote icon */}
             <Quote className="absolute -top-1 -left-2 w-3 h-3 text-stone-700 transform -scale-x-100 opacity-0 group-hover:opacity-100 transition-opacity" />
             
             <p className="text-stone-400 text-xs leading-relaxed font-light group-hover:text-stone-300 transition-colors pl-1">

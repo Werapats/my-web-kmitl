@@ -8,7 +8,7 @@ import { Menu, X } from "lucide-react"; // ต้องลง lucide-react แ�
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Why KMUTT", path: "/why" },
+  { name: "Why KMITL", path: "/why" },
   { name: "Portfolio", path: "/portfolio" },
 ];
 

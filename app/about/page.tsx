@@ -61,7 +61,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-6 left-6 p-4 bg-zinc-900/60 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl">
                     <div className="flex items-center gap-2 mb-1">
                       <Sparkles className="w-3 h-3 text-orange-400 fill-orange-400" />
-                      <p className="text-orange-400 text-xs font-bold tracking-widest uppercase">KMUTT</p>
+                      <p className="text-orange-400 text-xs font-bold tracking-widest uppercase">KMITL</p>
                     </div>
                 </div>
               }
@@ -85,7 +85,7 @@ export default function AboutPage() {
               วีรภัทร <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">ถนอมศรี</span>
             </h1>
             <p className="text-stone-400 leading-relaxed text-sm lg:text-base">
-            <span className="text-white font-medium">ผมตั้งใจศึกษาต่อใน มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี </span> เพราะเชื่อว่าจะช่วยต่อยอดความรู้ และศักยภาพในการเรียน และสร้างสรรค์เทคโนโลยีใหม่ๆ ที่ตอบโจทย์ทั้งความฝันของผมเอง และเป็นประโยชน์ต่อผู้คนกับสังคม เหมือนกับที่เทคโนโลยีได้เป็นส่วนสำคัญในชีวิตของเราทุกวันนี้
+            <span className="text-white font-medium">ผมตั้งใจศึกษาต่อใน สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง </span> เพราะเชื่อว่าจะช่วยต่อยอดความรู้ และศักยภาพในการเรียน และสร้างสรรค์เทคโนโลยีใหม่ๆ ที่ตอบโจทย์ทั้งความฝันของผมเอง และเป็นประโยชน์ต่อผู้คนกับสังคม เหมือนกับที่เทคโนโลยีได้เป็นส่วนสำคัญในชีวิตของเราทุกวันนี้
             </p>
           </div>
 
@@ -146,7 +146,7 @@ export default function AboutPage() {
             {/* Next Step Button */}
             <Link href="/why">
                 <button className="group relative inline-flex items-center gap-3 px-8 py-3 bg-white text-black rounded-full font-bold text-sm tracking-widest hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-orange-500/25 whitespace-nowrap">
-                  ทำไมต้อง KMUTT?
+                  ทำไมต้อง KMITL?
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
             </Link>
