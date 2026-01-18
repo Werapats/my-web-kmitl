@@ -1,0 +1,1321 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+app/data/projects.ts
+app/favicon.ico
+app/globals.css
+app/layout.tsx
+app/page.tsx
+app/portfolio/[id]/page.tsx
+app/portfolio/page.tsx
+app/template.tsx
+app/TiltedCard.tsx
+app/why/page.tsx
+components.json
+eslint.config.mjs
+next.config.ts
+package.json
+postcss.config.mjs
+public/file.svg
+public/globe.svg
+public/next.svg
+public/vercel.svg
+public/window.svg
+README.md
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="app/data/projects.ts">
+export const projects = [
+  {
+    id: "1",
+    title: "Motion Quest",
+    category: "Game",
+    shortDesc: "เกมที่ผู้เล่นควบคุมตัวละครด้วยการเคลื่อนไหวร่างกายจริง ผ่านเทคโนโลยี Motion Detection",
+    fullDesc: "Motion Quest เป็นเกมแนวตะลุยด่านพิชิตภารกิจที่ผู้เล่นควบคุมตัวละครด้วยการเคลื่อนไหวร่างกายจริง ผ่านเทคโนโลยี Motion Detection และกล้องเว็บแคม โดยพัฒนาด้วย Unity ร่วมกับ MediaPipe AI ที่สามารถตรวจจับจุดสำคัญของร่างกาย 33 จุด เช่น หัว ไหล่ มือ และเข่า เพื่อวิเคราะห์ท่าทางและถ่ายทอดสู่โมเดลในเกมแบบเรียลไทม์ ตัวเกมประกอบด้วย 3 มินิเกม ซึ่งผสมผสานความสนุก ความท้าทาย และการใช้ทักษะที่แตกต่างกัน ไม่ว่าจะเป็นการทำท่าทางให้เหมือนตามกำแพงที่เคลื่อนที่เข้ามาหา การหลบสิ่งกีดขวาง หรือการเคลื่อนไหวเพื่อตอบคำถาม โดยมีระบบอัลกอริทึมการนับคะแนนที่ประเมินจากความถูกต้องของท่าทาง ยิ่งผู้เล่นเคลื่อนไหวได้ตรงตามโจทย์ก็ยิ่งได้คะแนนสูงขึ้น Motion Quest จึงไม่ใช่แค่เกมเพื่อความบันเทิง แต่ยังช่วยฝึกความคิดสร้างสรรค์ การเรียนรู้เชิงรุก (Active Learning) ลดพฤติกรรมเนือยนิ่ง และส่งเสริมสุขภาพที่ดี เหมาะสำหรับบุคคลที่มองหาเกมสนุก ๆ พร้อมประโยชน์ในเวลาเดียวกัน",
+    image: "https://i.ibb.co/Q3nr3Kvv/Screenshot-2025-10-05-15-15-54-964-cn-wps-moffice-eng-edit.jpg",
+    tools: ["Unity", "Mediapipe", "Python", "Nomad"],
+    year: "2025",
+    awards: [
+      "🏆 เข้ารอบชิงชนะเลิศ NSC2025 ประเภทโปรแกรมเพื่อความบันเทิง (ได้รับทุน 10,000 บาท)"
+    ],
+    // เพิ่มส่วนนี้
+    myRole: [
+      "เป็นหัวหน้าด้านพัฒนาโค้ด",
+      "เชื่อมต่อ MediaPipe AI เข้ากับ Unity Engine",
+      "ออกแบบและเขียนอัลกอริทึม"
+    ]
+  },
+  {
+    id: "2",
+    title: "Lucky CAT Tech Solution",
+    category: "Internship",
+    shortDesc: "ฝึกงานตำแหน่ง Frontend Developer",
+    fullDesc: "ผมได้ฝึกงานกับบริษัท Lucky Cat Tech Solution ในตำแหน่ง Frontend Developer โดยมีหน้าที่ออกแบบและพัฒนาเว็บไซต์ ตั้งแต่การออกแบบ UI/UX ด้วย Figma ไปจนถึงการพัฒนาเว็บจริงด้วย React, Next.js, JavaScript, CSS และ Tailwind CSS ได้เรียนรู้การทำงานร่วมกับทีม การรับฟัง และปรับแก้ไขงานตามคำแนะนำ รวมถึงการจัดการโครงสร้างโค้ด เพื่อให้เว็บไซต์สามารถใช้งานได้จริงอย่างมีประสิทธิภาพ และสวยงาม ซึ่งประสบการณ์ครั้งนี้ทำให้ผมเข้าใจงานในสาย Frontend Developer มากขึ้น และช่วยพัฒนาทักษะด้านการออกแบบและการพัฒนาเว็บให้ดียิ่งขึ้น",
+    image: "https://i.ibb.co/RpxWRVSR/2025-10-04-013512.png",
+    tools: ["React", "Next.js", "JavaScript", "Tailwind CSS"],
+    year: "2024",
+    awards: [],
+    // เพิ่มส่วนนี้
+    myRole: [
+      "ออกแบบ UI/UX ของเว็บไซต์ด้วย Figma",
+      "พัฒนา Frontend ด้วย React และ Next.js และอื่นๆ"
+    ]
+  },
+  {
+    id: "3",
+    title: "Mini Aquarium",
+    category: "IoT",
+    shortDesc: " ตู้ปลาอัจฉริยะ เชื่อมต่อกับมือถือ",
+    fullDesc: "ผมได้ทำโปรเจกต์ IoT ในชื่อ “Mini Aquarium ตู้ปลาอัจฉริยะ ซึ่งเป็นระบบที่ออกแบบมาเพื่อช่วยจัดการและดูแลตู้ปลาอย่างสะดวกและอัตโนมัติ โดยมีฟังก์ชันหลัก คือการให้อาหารปลาผ่านแอพพลิเคชันบนมือถือ การตรวจวัดอุณหภูมิของน้ำแบบเรียลไทม์ พร้อมแสดงผลทั้งบนบอร์ดและในแอพ หากอุณหภูมิของน้ำสูงหรือต่ำเกินกว่าที่เหมาะสม ไฟภายในตู้ปลาจะเปลี่ยนเป็นสีแดงเพื่อเตือน แต่ถ้าอยู่ในช่วงที่เหมาะสมไฟจะแสดงเป็นสีเขียว เพื่อบอกว่าสภาพแวดล้อมปกติ ประสบการณ์ครั้งนี้ทำให้ผมได้เรียนรู้การพัฒนา IoT จริงทั้งในด้าน ฮาร์ดแวร์ การประกอบวงจร การเชื่อมต่ออุปกรณ์ และด้านซอฟต์แวร์ การเขียนโค้ด การเชื่อมต่อแพลตฟอร์ม IoT และการออกแบบระบบให้ใช้งานได้จริง",
+    image: "https://i.ibb.co/qLfgwSH7/2025-12-28-231645.png",
+    tools: ["Microblock Ide", "Blynk", "Kidbright32ip"],
+    year: "2024",
+    awards: [
+      "🥇 ได้รับรางวัลระดับเหรียญทอง กิจกรรมนวัตกรรมห้องเรียนพิเศษ"
+    ],
+    // เพิ่มส่วนนี้
+    myRole: [
+      "เป็นหัวหน้าทีม",
+      "ต่ออุปกรณ์ต่างๆ เข้ากับบอร์ด",
+      "พัพัฒนาแอปBlynkให้ทำงานร่วมกับบอร์ด"
+      
+    ]
+  },
+];
+</file>
+
+<file path="app/portfolio/[id]/page.tsx">
+"use client";
+import { useParams } from "next/navigation";
+import { projects } from "../../data/projects";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowLeft, Calendar, Layers, Trophy, CheckCircle2, User, Check } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function ProjectDetail() {
+  const params = useParams();
+  const project = projects.find((p) => p.id === params.id);
+
+  if (!project) {
+    return <div className="flex h-screen items-center justify-center text-stone-500">Project Not Found</div>;
+  }
+
+  return (
+    <motion.main 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="min-h-screen bg-stone-50 selection:bg-orange-100 selection:text-orange-900"
+    >
+      {/* Navbar / Back Button */}
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <Link href="/portfolio" className="group inline-flex items-center text-stone-500 hover:text-orange-600 transition-colors font-medium">
+          <div className="p-2 rounded-full bg-white border border-stone-200 mr-3 group-hover:border-orange-200 shadow-sm">
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          </div>
+          Back to Portfolio
+        </Link>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 pb-24">
+        {/* Layout: Grid 12 Columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          {/* ---------------- ฝั่งซ้าย: รูปภาพ + หน้าที่ของผม (Sticky) ---------------- */}
+          <div className="lg:col-span-5 lg:sticky lg:top-10 space-y-8">
+            
+            {/* 1. รูปภาพ */}
+            <motion.div 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-stone-100"
+            >
+              <Image 
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </motion.div>
+
+            {/* 2. ส่วนใหม่: หน้าที่รับผิดชอบ (My Role) */}
+            {project.myRole && (
+              <motion.div 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="bg-white rounded-2xl p-6 shadow-lg border border-stone-100"
+              >
+                <h3 className="flex items-center text-stone-900 font-bold mb-4 text-lg border-b border-stone-100 pb-3">
+                  <User className="w-5 h-5 mr-2 text-orange-500" />
+                  My Responsibilities
+                </h3>
+                <ul className="space-y-3">
+                  {project.myRole.map((role, index) => (
+                    <li key={index} className="flex items-start text-stone-600 text-sm md:text-base font-medium">
+                      <div className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center shrink-0 mr-3 mt-0.5">
+                        <Check className="w-3 h-3 text-orange-600" />
+                      </div>
+                      {role}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+
+          </div>
+
+          {/* ---------------- ฝั่งขวา: เนื้อหาหลัก (Scrollable) ---------------- */}
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="lg:col-span-7 flex flex-col justify-center pt-2"
+          >
+            {/* Header Tags */}
+            <div className="flex flex-wrap items-center gap-3 mb-6">
+              <span className="px-4 py-1.5 bg-orange-500 text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-orange-200 shadow-lg">
+                {project.category}
+              </span>
+              <span className="flex items-center px-4 py-1.5 bg-white border border-stone-200 rounded-full text-stone-500 text-xs font-semibold">
+                <Calendar className="w-3 h-3 mr-2" /> {project.year}
+              </span>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-8 leading-tight">
+              {project.title}
+            </h1>
+
+            {/* --- Awards Section --- */}
+            {project.awards && project.awards.length > 0 && (
+              <div className="mb-8 p-6 bg-gradient-to-br from-orange-50 to-white border border-orange-100 rounded-2xl shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/5 rounded-bl-full -mr-4 -mt-4" />
+                <h3 className="flex items-center text-orange-700 font-bold mb-4 relative z-10">
+                  <Trophy className="w-5 h-5 mr-2" /> Achievements & Awards
+                </h3>
+                <ul className="space-y-3 relative z-10">
+                  {project.awards.filter(a => a).map((award, index) => (
+                    <li key={index} className="flex items-start text-stone-700 text-sm md:text-base font-medium">
+                      <CheckCircle2 className="w-5 h-5 mr-3 text-orange-500 shrink-0 mt-0.5" />
+                      {award}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Description */}
+            <div className="prose prose-stone prose-lg max-w-none text-stone-600 mb-10 leading-relaxed">
+              <h3 className="text-xl font-bold text-stone-900 mb-4">Project Detail</h3>
+              <p className="whitespace-pre-line">{project.fullDesc}</p>
+            </div>
+
+            {/* Tools Grid */}
+            <div className="border-t border-stone-200 pt-8">
+              <h3 className="flex items-center text-stone-900 font-bold mb-5">
+                <Layers className="w-5 h-5 mr-2 text-stone-400" /> 
+                Technology Stack
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {project.tools.map((tool) => (
+                  <span key={tool} className="px-5 py-2.5 bg-white border border-stone-200 rounded-xl text-stone-600 text-sm font-medium hover:border-orange-300 hover:text-orange-600 hover:shadow-md transition-all cursor-default">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+          </motion.div>
+        </div>
+      </div>
+    </motion.main>
+  );
+}
+</file>
+
+<file path="app/portfolio/page.tsx">
+"use client";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, Home } from "lucide-react";
+import { projects } from "../data/projects"; // ดึงข้อมูลจากไฟล์ data
+
+export default function PortfolioPage() {
+  return (
+    <main className="min-h-screen bg-stone-50 p-6 md:p-12">
+      
+      {/* Header ส่วนหัว */}
+      <header className="flex justify-between items-center mb-12 max-w-6xl mx-auto">
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold text-stone-900">Selected Works</h1>
+          <div className="h-1 w-20 bg-orange-500 mt-2 rounded-full"></div>
+        </div>
+        <Link href="/" className="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition text-stone-600 hover:text-orange-600">
+          <Home className="w-6 h-6" />
+        </Link>
+      </header>
+
+      {/* Grid ผลงาน: มือถือ 1 ช่อง, ไอแพด 2 ช่อง, คอม 3 ช่อง */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        {projects.map((project, index) => (
+          <Link href={`/portfolio/${project.id}`} key={project.id} className="block h-full">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -8 }}
+              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 cursor-pointer h-full flex flex-col border border-stone-100"
+            >
+              {/* รูปภาพ Cover */}
+              <div className="relative h-56 md:h-48 overflow-hidden">
+                <Image 
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-orange-600/0 group-hover:bg-orange-600/10 transition-colors duration-300" />
+              </div>
+
+              {/* เนื้อหาการ์ด */}
+              <div className="p-6 flex flex-col grow">
+                <span className="text-xs font-bold text-orange-500 uppercase tracking-wider mb-2">
+                  {project.category}
+                </span>
+                <h3 className="text-xl font-bold text-stone-800 mb-2 group-hover:text-orange-600 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-stone-500 text-sm line-clamp-2 mb-4 grow">
+                  {project.shortDesc}
+                </p>
+                
+                {/* ปุ่ม Action ด้านล่างการ์ด */}
+                <div className="flex items-center text-sm font-medium text-stone-400 group-hover:text-orange-600 transition mt-auto pt-4 border-t border-stone-50">
+                  อ่านรายละเอียด <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </motion.div>
+          </Link>
+        ))}
+      </div>
+
+      {/* Footer เล็กๆ */}
+      <footer className="text-center mt-20 text-stone-400 text-sm">
+        <p>Code by Werapat SA.</p>
+      </footer>
+    </main>
+  );
+}
+</file>
+
+<file path="app/template.tsx">
+"use client";
+import { motion } from "framer-motion";
+
+export default function Template({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+</file>
+
+<file path="app/TiltedCard.tsx">
+"use client";
+import { useRef, useState } from "react";
+import { motion, useMotionValue, useSpring, SpringOptions } from "framer-motion";
+
+interface TiltedCardProps {
+  imageSrc: string;
+  altText?: string;
+  captionText?: string;
+  containerHeight?: string | number;
+  containerWidth?: string | number;
+  imageHeight?: string | number;
+  imageWidth?: string | number;
+  scaleOnHover?: number;
+  rotateAmplitude?: number;
+  showMobileWarning?: boolean;
+  showTooltip?: boolean;
+  overlayContent?: React.ReactNode;
+  displayOverlayContent?: boolean;
+}
+
+const springValues: SpringOptions = {
+  damping: 30,
+  stiffness: 100,
+  mass: 2,
+};
+
+export default function TiltedCard({
+  imageSrc,
+  altText = "Tilted card image",
+  captionText = "",
+  containerHeight = "300px",
+  containerWidth = "100%",
+  imageHeight = "300px",
+  imageWidth = "300px",
+  scaleOnHover = 1.1,
+  rotateAmplitude = 14,
+  showMobileWarning = true,
+  showTooltip = true,
+  overlayContent = null,
+  displayOverlayContent = false,
+}: TiltedCardProps) {
+  const ref = useRef<HTMLElement>(null);
+
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useSpring(useMotionValue(0), springValues);
+  const rotateY = useSpring(useMotionValue(0), springValues);
+  const scale = useSpring(1, springValues);
+  const opacity = useSpring(0);
+  const rotateFigcaption = useSpring(0, {
+    stiffness: 350,
+    damping: 30,
+    mass: 1,
+  });
+
+  const [lastY, setLastY] = useState(0);
+
+  function handleMouse(e: React.MouseEvent<HTMLElement>) {
+    if (!ref.current) return;
+
+    const rect = ref.current.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left - rect.width / 2;
+    const offsetY = e.clientY - rect.top - rect.height / 2;
+
+    const rotationX = (offsetY / (rect.height / 2)) * -rotateAmplitude;
+    const rotationY = (offsetX / (rect.width / 2)) * rotateAmplitude;
+
+    rotateX.set(rotationX);
+    rotateY.set(rotationY);
+
+    x.set(e.clientX - rect.left);
+    y.set(e.clientY - rect.top);
+
+    const velocityY = offsetY - lastY;
+    rotateFigcaption.set(-velocityY * 0.6);
+    setLastY(offsetY);
+  }
+
+  function handleMouseEnter() {
+    scale.set(scaleOnHover);
+    opacity.set(1);
+  }
+
+  function handleMouseLeave() {
+    opacity.set(0);
+    scale.set(1);
+    rotateX.set(0);
+    rotateY.set(0);
+    rotateFigcaption.set(0);
+  }
+
+  return (
+    <figure
+      ref={ref}
+      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
+      style={{
+        height: containerHeight,
+        width: containerWidth,
+      }}
+      onMouseMove={handleMouse}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {showMobileWarning && (
+        <div className="absolute top-4 text-center text-sm block sm:hidden text-white bg-black/50 px-2 py-1 rounded">
+          This effect is not optimized for mobile. Check on desktop.
+        </div>
+      )}
+
+      <motion.div
+        className="relative [transform-style:preserve-3d]"
+        style={{
+          width: imageWidth,
+          height: imageHeight,
+          rotateX,
+          rotateY,
+          scale,
+        }}
+      >
+        <motion.img
+          src={imageSrc}
+          alt={altText}
+          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+          style={{
+            width: imageWidth,
+            height: imageHeight,
+          }}
+        />
+
+        {displayOverlayContent && overlayContent && (
+          // *** แก้ไขตรงนี้ครับ เปลี่ยน top-0 left-0 เป็น inset-0 ***
+          <motion.div className="absolute inset-0 z-[2] will-change-transform [transform:translateZ(30px)]">
+            {overlayContent}
+          </motion.div>
+        )}
+      </motion.div>
+
+      {showTooltip && (
+        <motion.figcaption
+          className="pointer-events-none absolute left-0 top-0 rounded-[4px] bg-white px-[10px] py-[4px] text-[10px] text-[#2d2d2d] opacity-0 z-[3] hidden sm:block font-bold whitespace-nowrap"
+          style={{
+            x,
+            y,
+            opacity,
+            rotate: rotateFigcaption,
+          }}
+        >
+          {captionText}
+        </motion.figcaption>
+      )}
+    </figure>
+  );
+}
+</file>
+
+<file path="components.json">
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "registries": {
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
+  }
+}
+</file>
+
+<file path="eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path=".gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vercel
+</file>
+
+<file path="app/globals.css">
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+</file>
+
+<file path="app/why/page.tsx">
+"use client";
+import { motion, Variants } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, BookOpen, Lightbulb, Users, Quote } from "lucide-react";
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.5 } },
+};
+
+export default function WhyPage() {
+  return (
+    // h-screen + overflow-hidden คือหัวใจสำคัญที่ทำให้หน้าไม่เลื่อน
+    <main className="h-screen w-full flex flex-col lg:flex-row bg-[#050505] text-white overflow-hidden relative selection:bg-orange-500/30 selection:text-orange-200">
+      
+      {/* --- Background Effects --- */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-600/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 mix-blend-overlay pointer-events-none"></div>
+
+      {/* ---------------- Left Section: Image (50%) ---------------- */}
+      {/* ตัด border-r ออกเพื่อให้ดูลื่นไหล หรือจะใส่ border-white/5 คืนก็ได้ */}
+      <motion.div 
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className="hidden lg:block lg:w-1/2 h-full relative overflow-hidden group"
+      >
+        <Image 
+          src="https://www.kmutt.ac.th/wp-content/uploads/2020/09/KMUTT_CI_Semi_Logo-normal-full-1061x1200.png" 
+          alt="KMUTT Atmosphere"
+          fill
+          className="object-cover transition-transform duration-[3s] group-hover:scale-105 opacity-80"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#050505]/20 to-[#050505]" />
+        
+        <div className="absolute top-8 left-8 bg-white/10 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full">
+            <span className="text-xs font-bold tracking-widest text-orange-400 uppercase">My Vision</span>
+        </div>
+      </motion.div>
+
+      {/* ---------------- Right Section: Content (50%) ---------------- */}
+      {/* ใช้ h-full และ flex-col เพื่อจัดเนื้อหาให้เต็มความสูงพอดี */}
+      <div className="w-full lg:w-1/2 h-full flex flex-col justify-center px-6 lg:px-12 xl:px-20 py-6 relative z-10">
+        
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col h-full justify-center max-h-[900px]" // max-h เพื่อไม่ให้ยืดจนน่าเกลียดในจอแนวตั้งยาวๆ
+        >
+          {/* 1. Header Section */}
+          <motion.div variants={itemVariants} className="mb-4 shrink-0">
+            <div className="flex items-center gap-3 text-orange-500 font-bold text-xs tracking-[0.2em] uppercase mb-2">
+              <span className="w-6 h-[2px] bg-orange-500 inline-block"></span>
+              Vision & Passion
+            </div>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white mb-1">
+              Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">KMUTT?</span>
+            </h1>
+            <p className="text-stone-500 text-sm lg:text-base font-light">
+              ทำไมต้องเป็นที่นี่? <span className="text-stone-700 mx-2">|</span> คำตอบจากใจและความตั้งใจจริง
+            </p>
+          </motion.div>
+          
+          {/* 2. Reasons Grid (Flexible Height) */}
+          {/* flex-1 จะสั่งให้ส่วนนี้ขยายกินพื้นที่ว่างทั้งหมด ทำให้ดูเต็มจอพอดี */}
+          <div className="flex-1 flex flex-col justify-center gap-3 lg:gap-4 py-2">
+            
+            <ReasonCard 
+              icon={<BookOpen className="w-4 h-4 text-orange-400" />}
+              title="Project-based Learning"
+              desc="ผมศึกษาโครงสร้างหลักสูตรของที่นี่มาละเอียดครับ ชอบตรงที่ 'วิชาเรียนมันไม่อยู่นิ่ง' ปรับเปลี่ยนตาม Tech Trend ตลอดเวลา ทำให้ผมมั่นใจว่าทุกบรรทัดที่โค้ด ทุกโปรเจกต์ที่ทำ จะเป็นสกิลที่เอาไปใช้งานจริงได้ทันที"
+            />
+
+            <ReasonCard 
+              icon={<Users className="w-4 h-4 text-orange-400" />}
+              title="Developer Community"
+              desc="สารภาพตรงๆ ว่า 'ที่นี่คือเป้าหมายแรกและเป้าหมายเดียว' ของผมมาตลอด จุดเปลี่ยนสำคัญคือวัน Open House ผมได้เข้าไป พูดคุยกับรุ่นพี่ เกี่ยวกับสาขา ยิ่งได้ฟังคำตอบและเห็น Passion ของพี่ๆ ตอนอธิบาย มันเหมือนภาพในหัวผมมันชัดขึ้นทันทีว่า 'ต้องเป็นที่นี่แหละ' อนาคตของผม"
+            />
+
+            <ReasonCard 
+              icon={<Lightbulb className="w-4 h-4 text-orange-400" />}
+              title="Innovation & Future (Ant Spirit)"
+              desc="ผมชอบ 'ความสู้งาน' ของบางมดครับ ผมรู้กิตติศัพท์ว่า ที่นี่เรียนโหดและเน้นผลงานจริง ซึ่งมัน 'ตรงจริต' ผมมาก ผมไม่ได้มองหาที่เรียนสบายๆ แต่อยากเอาตัวเองมาอยู่ในที่ที่คนเก่งๆ เขาขยันกัน เพื่อให้ผมพัฒนาตัวเองยิ่งขึ้นไปอีก"
+            />
+
+          </div>
+
+          {/* 3. Button Section */}
+          <motion.div variants={itemVariants} className="shrink-0 mt-4">
+            <Link href="/portfolio">
+              <button className="group relative inline-flex items-center gap-3 px-6 py-3 bg-white text-black rounded-full font-bold text-xs lg:text-sm tracking-widest hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-orange-500/25">
+                ดูผลงาน
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </Link>
+          </motion.div>
+
+        </motion.div>
+      </div>
+    </main>
+  );
+}
+
+// Compact Card Design
+function ReasonCard({ icon, title, desc }: { icon: React.ReactNode, title: string, desc: string }) {
+  return (
+    <motion.div 
+      variants={itemVariants}
+      // ใช้ p-3 หรือ p-4 เพื่อประหยัดพื้นที่แนวตั้ง
+      className="group relative p-3 lg:p-4 rounded-xl bg-[#111] border border-white/5 hover:border-orange-500/30 hover:bg-white/[0.02] transition-all duration-300"
+    >
+      <div className="flex gap-4 items-start">
+        {/* Icon Box */}
+        <div className="mt-1 w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center shrink-0 border border-orange-500/20 group-hover:scale-110 transition-transform duration-300">
+          {icon}
+        </div>
+        
+        {/* Content */}
+        <div className="flex-1">
+          <h3 className="text-base lg:text-lg font-bold text-white mb-1 group-hover:text-orange-400 transition-colors">
+            {title}
+          </h3>
+          <div className="relative">
+             {/* Quote icon เล็กๆ */}
+            <Quote className="absolute -top-1 -left-1 w-2 h-2 text-stone-700 transform -scale-x-100 opacity-0 group-hover:opacity-100 transition-opacity" />
+            
+            {/* ปรับขนาดตัวหนังสือข้อความ (Description) ให้พอดี */}
+            <p className="text-stone-400 text-xs lg:text-[13px] xl:text-sm leading-relaxed font-light group-hover:text-stone-300 transition-colors">
+              {desc}
+            </p>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  )
+}
+</file>
+
+<file path="next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co', 
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.kmutt.ac.th',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co', // ✅ ตัวที่เพิ่มมาใหม่
+      },
+    ],
+  },
+};
+
+export default nextConfig;
+</file>
+
+<file path="README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#   K M U T T - P o r t f o l i o  
+ 
+</file>
+
+<file path="app/layout.tsx">
+import type { Metadata } from "next";
+import { Kanit } from "next/font/google";
+import "./globals.css";
+
+const kanit = Kanit({ 
+  subsets: ["latin", "thai"],
+  weight: ["300", "400", "500", "600"],
+  variable: '--font-kanit'
+});
+
+export const metadata: Metadata = {
+  title: "Weerapat's Portfolio",
+  description: "Web Developer Portfolio",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="th">
+      <body className={`${kanit.className} bg-[#050505] text-white antialiased selection:bg-orange-500/30 selection:text-orange-200`}>
+        
+
+        
+        {children}
+      </body>
+    </html>
+  );
+}
+</file>
+
+<file path="app/page.tsx">
+"use client";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Code2, Sparkles, Cpu, Terminal, Mail, Github, Facebook } from "lucide-react"; 
+import TiltedCard from "./TiltedCard";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen flex flex-col justify-center items-center p-6 bg-[#050505] text-white overflow-hidden relative selection:bg-orange-500/30 selection:text-orange-200">
+      
+      {/* --- Background Effects --- */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-orange-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none"></div>
+
+      {/* Container */}
+      <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative z-10">
+        
+        {/* --- ส่วนข้อความ (ซ้าย) --- */}
+        <div className="text-center md:text-left md:w-3/5 relative space-y-8">
+          
+          {/* ส่วนหัว: Badge + ชื่อ */}
+          <div className="space-y-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+              </span>
+              <span className="text-xs font-medium text-stone-300 tracking-wide uppercase">
+                โรงเรียนสตรีอ่างทอง
+              </span>
+            </motion.div>
+            
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-tight"
+            >
+              วีรภัทร{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">
+                ถนอมศรี
+              </span>
+            </motion.h1>
+          </div>
+
+          {/* กล่องข้อมูล (Info Box) */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4 }}
+            className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm inline-flex flex-col md:flex-row md:items-center gap-4 hover:bg-white/10 transition-colors duration-300"
+          >
+              <div className="flex items-center gap-3">
+                  <div className="p-2 bg-orange-500/20 rounded-lg">
+                    <Code2 className="w-5 h-5 text-orange-400" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs text-stone-400 uppercase tracking-wider">Program</p>
+                    <p className="text-sm font-medium text-stone-200">ห้องเรียนพิเศษวิทย์-คณิต-คอมฯ</p>
+                  </div>
+              </div>
+              
+              <div className="hidden md:block w-[1px] h-8 bg-white/10"></div>
+
+              <div className="flex gap-2 justify-center">
+                   <span className="px-2 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-300 font-mono flex items-center gap-1">
+                      <Terminal size={10} /> Coding
+                   </span>
+                   <span className="px-2 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-[10px] text-purple-300 font-mono flex items-center gap-1">
+                      <Cpu size={10} /> IoT
+                   </span>
+              </div>
+          </motion.div>
+
+          {/* คำอธิบาย */}
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="text-stone-400 text-base md:text-lg leading-relaxed max-w-lg mx-auto md:mx-0"
+          >
+           <span className="text-stone-200 font-medium">ผมมีความตั้งใจศึกษาต่อในสาขาวิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</span> เพราะเชื่อว่าจะช่วยต่อยอดความรู้ และศักยภาพในการเรียน และสร้างสรรค์เทคโนโลยีใหม่ๆ ที่ตอบโจทย์ทั้งความฝันของผมเอง และเป็นประโยชน์ต่อผู้คนกับสังคม เหมือนกับที่เทคโนโลยีได้เป็นส่วนสำคัญในชีวิตของเราทุกวันนี้
+
+          </motion.p>
+
+          {/* ปุ่ม Action + Social Icons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="flex flex-col items-center md:items-start gap-6"
+          >
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/why">
+                <button className="group relative px-8 py-3 bg-white text-stone-950 rounded-full font-bold text-sm hover:bg-orange-500 hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] flex items-center gap-2">
+                  ทำไมต้องที่นี่?
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </Link>
+              <Link href="/portfolio">
+                <button className="px-8 py-3 rounded-full font-medium text-sm text-stone-400 hover:text-white border border-stone-800 hover:border-stone-600 transition-all">
+                  ดูผลงาน
+                </button>
+              </Link>
+            </div>
+
+            {/* Social Icons Bar */}
+            <div className="flex items-center gap-4 pt-2 border-t border-white/5 w-full md:w-auto justify-center md:justify-start">
+               <span className="text-xs text-stone-600 uppercase font-bold tracking-widest">Connect</span>
+               <div className="flex gap-3">
+                  {/* GitHub */}
+                  <a 
+                    href="https://github.com/Werapats" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-stone-400 hover:text-[#2dba4e] transition-colors"
+                  >
+                    <Github size={18} />
+                  </a>
+
+                  {/* Facebook */}
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=61570937945066&locale=th_TH" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-stone-400 hover:text-[#1877F2] transition-colors"
+                  >
+                    <Facebook size={18} />
+                  </a>
+
+                  {/* --- Email Logic: แสดงผลตามอุปกรณ์ --- */}
+                  
+                  {/* 1. Mobile Only: ใช้ mailto (แสดงเฉพาะหน้าจอเล็ก md:hidden) */}
+                  <a 
+                    href="mailto:dueiwo67@gmail.com" 
+                    className="md:hidden p-2 rounded-full bg-white/5 hover:bg-white/10 text-stone-400 hover:text-[#EA4335] transition-colors"
+                  >
+                    <Mail size={18} />
+                  </a>
+
+                  {/* 2. PC Only: ใช้ Gmail Web (แสดงเฉพาะหน้าจอกลางขึ้นไป md:block) */}
+                  <a 
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dueiwo67@gmail.com"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hidden md:block p-2 rounded-full bg-white/5 hover:bg-white/10 text-stone-400 hover:text-[#EA4335] transition-colors"
+                  >
+                    <Mail size={18} />
+                  </a>
+                  
+               </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* --- รูปภาพโปรไฟล์ (ขวา) แบบ Tilted 3D + Auto Float --- */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ 
+            opacity: 1, 
+            scale: 1, 
+            y: [0, -15, 0],    
+            rotate: [0, 2, -2, 0] 
+          }}
+          transition={{ 
+            opacity: { duration: 1 },
+            scale: { duration: 1, type: "spring" },
+            y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+            rotate: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+          }}
+          className="relative md:w-[450px] md:h-[450px] flex items-center justify-center shrink-0"
+        >
+            <div className="absolute inset-0 bg-gradient-to-tr from-orange-500 to-purple-600 rounded-full blur-[80px] opacity-20 animate-pulse pointer-events-none"></div>
+            
+            <TiltedCard
+              imageSrc="https://i.ibb.co/pj3mK75q/SUN-6991-1.jpg"
+              altText="Weerapat Thanomsri Profile"
+              captionText="Weerapat Thanomsri"
+              containerHeight="500px"
+              containerWidth="350px"
+              imageHeight="500px"
+              imageWidth="350px"
+              rotateAmplitude={12}
+              scaleOnHover={1.05}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <div className="absolute bottom-6 right-6 p-3 bg-[#1a1a1a]/90 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-z-10">
+                    <div className="bg-orange-500/20 p-2 rounded-full">
+                        <Sparkles className="w-5 h-5 text-orange-400" />
+                    </div>
+                    <div>
+                        <p className="text-[10px] text-stone-400 uppercase tracking-wider">Passion</p>
+                        <p className="text-xs font-bold text-white">KMUTT</p>
+                    </div>
+                </div>
+              }
+            />
+        </motion.div>
+
+      </div>
+    </main>
+  );
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5"
+  }
+}
+</file>
+
+</files>
