@@ -181,7 +181,7 @@ export default function PixelSnow({
   color = '#ffffff',
   flakeSize = 0.01,
   minFlakeSize = 1.25,
-  pixelResolution = 450,
+  pixelResolution = 500,
   speed = 1.25,
   depthFade = 8,
   farPlane = 20,
